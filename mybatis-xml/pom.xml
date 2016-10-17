@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.veryjava</groupId>
-  <artifactId>mybatis-annotation</artifactId>
+  <artifactId>mybatis-xml</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>mybatis-annotation</name>
+  <name>mybatis-xml</name>
   <description>spring boot整合MyBatis</description>
 
   <parent>
@@ -46,7 +46,12 @@
       <artifactId>mybatis-spring-boot-starter</artifactId>
       <version>1.1.1</version>
     </dependency>
-
+    <!-- druid 数据库连接池-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.0.15</version>
+    </dependency>
   </dependencies>
 
   <build>
