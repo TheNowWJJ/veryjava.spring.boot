@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <include resource="org/springframework/boot/logging/logback/base.xml"/>
+  <logger name="org.springframework.web" level="info"/>
+
+  <logger name="cn.veryjava" level="INFO"/>
+  <!-- 注意加上这一句,要不然啥配置都没用,具体到XXXMapper.java所在的package -->
+  <logger name="cn.veryjava" level="DEBUG"/>
+
+  <!-- mybatis日志打印 -->
+  <logger name="com.ibatis" level="DEBUG"/>
+  <logger name="com.ibatis.common.jdbc.SimpleDataSource" level="DEBUG"/>
+  <logger name="com.ibatis.common.jdbc.ScriptRunner" level="DEBUG"/>
+  <logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="DEBUG"/>
+
+  <logger name="java.sql.Connection" level="DEBUG"/>
+  <logger name="java.sql.Statement" level="DEBUG"/>
+  <logger name="java.sql.PreparedStatement" level="DEBUG"/>
+</configuration>
