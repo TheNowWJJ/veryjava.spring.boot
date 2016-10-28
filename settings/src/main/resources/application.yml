@@ -11,18 +11,3 @@ veryjava:
     uuid: ${random.uuid}
     lessThanTen: ${random.int(10)}
     inRange: ${random.int[1024,65536]}
----
-spring:
-  profiles: dev
-veryjava:
-  name: 阳光如初 in dev.
-  age: 88
-  object: 404
-  position: 软件开发工程师
-  my:
-    secret: ${random.value}
-    number: ${random.int}
-    bignumber: ${random.long}
-    uuid: ${random.uuid}
-    lessThanTen: ${random.int(10)}
-    inRange: ${random.int[1024,65536]}
