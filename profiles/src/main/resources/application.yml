@@ -1,0 +1,9 @@
+spring:
+  profiles: prod
+veryjava:
+  name: 阳光如初.
+---
+spring:
+  profiles: dev
+veryjava:
+  name: 阳光如初 in dev.
