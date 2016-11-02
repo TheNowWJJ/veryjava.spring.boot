@@ -1,0 +1,6 @@
+logging:
+  #file: /var/log/ssab/log.log
+  path: /var/log/ssab/
+  level:
+    cn:
+      veryjava: error

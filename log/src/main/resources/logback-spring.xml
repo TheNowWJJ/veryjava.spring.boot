@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <springProfile name="master">
+    <!-- 将日志记录到文件中-->
+    <appender name="LOG" class="ch.qos.logback.core.FileAppender">
+      <file>/var/log/ssab/log.log</file>
+      <append>true</append>
+      <encoder>
+        <pattern>时间: %date{yyyy-MM-dd HH:mm:ss.SSS} 耗时: %-4relative 毫秒 线程名称: [%thread] %logger{35} -
+          %msg %n
+        </pattern>
+      </encoder>
+    </appender>
+  </springProfile>
+
+  <springProfile name="test">
+    <!-- 将日志记录到文件中-->
+    <appender name="LOG" class="ch.qos.logback.core.FileAppender">
+      <file>/var/log/ssab/log.log</file>
+      <append>true</append>
+      <encoder>
+        <pattern>时间: %date{yyyy-MM-dd HH:mm:ss.SSS} 耗时: %-4relative 毫秒 线程名称: [%thread] %logger{35} -
+          %msg %n
+        </pattern>
+      </encoder>
+    </appender>
+  </springProfile>
+
+  <springProfile name="dev">
+    <!-- 将日志打印到控制台 -->
+    <appender name="LOG" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder>
+        <pattern>时间: %date{yyyy-MM-dd HH:mm:ss.SSS} 耗时: %-4relative 毫秒 线程名称: [%thread] %logger{35} -
+          %msg %n
+        </pattern>
+      </encoder>
+    </appender>
+  </springProfile>
+
+  <root level="INFO">
+    <appender-ref ref="LOG"/>
+  </root>
+</configuration>
