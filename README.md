@@ -1,5 +1,5 @@
 # veryjava.spring.boot
 
-> www.veryjava.cn
+> blog.veryjava.cn
 
 > Spring Boot 
